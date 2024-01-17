@@ -5,3 +5,8 @@ npm install @mui/material @emotion/react @emotion/styled
 OU
 
 yarn add @mui/material @emotion/react @emotion/styled
+
+
+
+
+npm install react-toggle-switch

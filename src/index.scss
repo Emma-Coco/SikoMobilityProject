@@ -28,7 +28,7 @@ code {
   align-items: center;
   width: 100%;
   height: 80px;
-  background-color: white;
+  background-color: grey;
   position: sticky;
   
   .logo{
@@ -43,6 +43,7 @@ code {
       justify-content: flex-end;
       margin: 0;
       padding: 0;
+      align-items: center;
 
       li {
         margin-left: 15px;
@@ -51,4 +52,61 @@ code {
     }
   }
     
+}
+
+
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-right: 10px !important;
+
+  .react-switch-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E8E8F4 !important;
   }
+
+    .react-switch-handle {
+      height: 100% !important;
+      width: 55% !important;
+      background: #3C83F6 !important;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 60px !important;
+      position: absolute;
+      top: 5px;
+      outline: 0;
+      border: 0;
+      transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.15s ease !important;
+      transform: translateX(0%);
+    }
+
+  
+
+  &.switched {
+    flex-direction: row-reverse;
+  }
+
+  .switch-label {
+    margin: 0 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #6B7280;
+  }
+
+  .react-switch {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+
+
+
