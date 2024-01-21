@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Banner from "./components/banner";
+import FirstSection from "./components/Section1";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
     <Header />
     <Banner />
+    <FirstSection />
     <main className='main'>
       
     </main>

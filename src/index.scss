@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  height: 100%;
+  height: auto;
   padding: 0;
   font-size: 16px;
 }
@@ -18,48 +18,78 @@ code {
 
 .wrapper {
   max-width: 1244px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
-h3{
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
   font-size: 1.375rem;
 }
 
-.header {
-  top: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  background-color: white;
-  position: sticky;
-  
-  .logo{
-    max-width: 282px;
-    margin-right: auto;
-    margin-left: 5px;
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  .right {
-    margin-left: auto;
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-end;
-      margin: 0;
-      padding: 0;
-      align-items: center;
 
-      li {
-        margin-left: 15px;
-        margin-right: 5px;
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+
+.scrollContainer{
+  position: sticky;
+  top: 0; /* You can adjust this value based on your layout */
+  z-index: 100; /* Ensure it has a higher z-index than its siblings */
+  background-color: white;
+  min-height: 80px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Align items to the start and end of the container */
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    margin: auto;
+    
+    .logo{
+      max-width: 282px;
+      margin-right: auto;
+      margin-left: 5px;
+    }
+    .right {
+      margin-left: auto;
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+
+        li {
+          margin-left: 15px;
+          margin-right: 5px;
+        }
       }
     }
+      
   }
-    
 }
 
 
@@ -115,10 +145,12 @@ h3{
 }
 
 .banner{
-  background-image: url('../src/assets/banner.png');
+    background-image: url('../src/assets/banner.png');
     max-width: 100%;
     height: 560px;
     background-position: center; /* Centrez le contenu de l'arrière-plan */
+    background-size: cover;
+    position: relative;
 
     .title{
       max-width: 75%;
@@ -133,30 +165,94 @@ h3{
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 73.8746%;
-      height: 62.6761%;
-      transform: translate(26.1254%, 36%);
+      width: 62%;
+      height: 61%;
+      transform: translate(33%, 35%);
+      position: absolute;
       
 
       img{
         position: relative;
         width: 100%;
         height: 100%;
-      
-        
-
       }
 
       h3{
         position: absolute;
-        width: 82.4810%;
-        
-      
+        width: 82.4810%; 
       }
     }
     
 }
+.startButton {
+  color: #FFFFFF;
+  background-color: #80B1C5;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
 
+}
+
+.startButton:hover {
+  background-color: #3C83F6; /* Darker color on hover */
+}
+
+
+
+.section1{
+  width: 100%;
+  height: 621px;
+  overflow: hidden;
+  background-image: url('../src/assets/backgroundSection1.png');
+  background-position: center;
+  background-size: cover;
+
+  
+  .wrapper{
+    max-height: 621px;
+
+    .leftSection {
+      width: 50%;
+      height: 100%;
+      float: left;
+    
+    
+      .illustration1 {
+        img {
+          box-sizing: border-box;
+          width: 100%;
+          max-height: 584px;
+          margin-top: 7.5%;
+          
+        }
+      }
+      
+    }
+    
+    .rightSection {
+      width: 50%;
+      height: 100%;
+      float: right;
+
+      .description{
+        margin-top: 35%;
+        text-align: right;
+        
+
+          h2{
+            margin-bottom: 3.2206%;
+
+          }
+
+          h3{
+            margin-bottom: 3.2206%;
+            
+          }
+      }
+    }
+  }
+}
 
 
 

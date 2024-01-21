@@ -1,12 +1,5 @@
-Biblithèque MUI: 
+npm install
 
-npm install @mui/material @emotion/react @emotion/styled
-
-OU
-
-yarn add @mui/material @emotion/react @emotion/styled
-
-
-
+npm install sass
 
 npm install react-toggle-switch

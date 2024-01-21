@@ -2,8 +2,9 @@ import blueBubble from '../assets/Ellipse1.png'
 
 function Banner () {
     return (
-        <div className='wrapper'>
-            <div className='banner'>
+        
+         <div className='banner'>
+            <div className='wrapper'>
                 <h1 className='title'>
                 Siko Mobility, la plateforme de financement et de services pour la mobilité électrique en abonnement.
                 </h1>
